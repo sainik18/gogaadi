@@ -29,20 +29,71 @@
 /* header style start
   ============================================================================================ */
 .header_area {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
   transition: background 0.4s, all 0.3s linear;
 }
-
-.header_area .navbar-right {
-  min-width: 200px;
-  text-align: right;
-}
-
-@media (max-width: 991px) {
+/*saisudhakarStyles strt here*/
+.magic-ball{padding-top:90px;}
+.bg_y{background:linear-gradient(to bottom, #fff1ab, #fff4c0, #fff9dd,#fff,#fff);}
+.anything{padding-top:135px;}
+.org{color: #ff9e20}
+.cgrey{color:#676767;font-size:18px;margin-top:20px;}
+.bub{position: relative;}
+.bub:before{content: "";position:absolute;width:95px;height:95px;border-radius: 100%;background: #4c70b7;left:-30px;opacity: 0.5;}
+.bub:after{content: "";position: absolute;width: 70px;height: 70px;border-radius: 100%;background: #fce674;left: 20px;top: -30px;opacity: 0.85;}
+.ovh{overflow: hidden;}
+.arrow{position: relative;background-color: #a3c8ff;text-align: left;}
+.arrow:before,.arrow:after{content: '';position: absolute;background-color: inherit;}
+.arrow,.arrow:before,.arrow:after{width:  2em;height: 2em;border-top-right-radius: 30%;}
+.arrow.left {transform: rotate(-18deg) skewX(-30deg) scale(1,.866);position: absolute;top: -100px;left: 20%;}
+.arrow:before {transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);}
+.arrow:after {transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);}
+.circle{position: absolute;width: 45px;height: 45px;background: #fff;border-radius: 100%;border: 10px solid #f7a7a8;top: -90px;left: 59%;}
+.pt-60{padding-top:60px;}
+.main img{float:left;}
+.caption{float: left;padding: 215px 75px 0;position:relative}
+.caption p{color:#676767;line-height: 30px;width:415px}
+.caption:before {content: "1";font-size: 215px;position: absolute;top: 75px;left: 30%;z-index: -1;color: rgba(255, 157, 37, 0.1);}
+.main{width:100%;float:left;margin-top:100px}
+.main img{width:45%}
+.main.step2 .caption:before{content: "2"}
+.main.step3 .caption:before{content: "3"}
+.main.step4 .caption:before{content: "4"}
+.header_area .navbar-right {min-width: 200px;text-align: right;}
+.clear{clear: both;}
+.rcb{background: #4c70b7;color: #fff;clear:both}
+.hgh{width: 692px;height: 75px;font-family: Muli;font-size: 30px;font-weight: bold;font-style: normal;font-stretch: normal;  line-height: 1.5;letter-spacing: normal;text-align: left;
+  color: #ffffff;}
+.cbfr{line-height: 2;}
+.space{padding-top:35px;padding-bottom:35px;width:100%;}
+.ae{ font-family: Muli;font-size: 42px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1.3;letter-spacing: normal;text-align: left;color: #ff9d25;}
+.pt-150{padding-top:150px;}
+.wcs{padding-top:150px;}
+.posrel{position:relative;}
+.wcs .arrow.left{right: 20%;left: inherit;transform: rotate(10deg) skewX(-30deg) scale(1,.866);}
+.wcs .circle{left: 0px;top: 30px;}
+.owl-item{float: left;}
+.carousel{padding-top:75px;}
+.items-container{padding:0 100px;width:100%;float:left;overflow: hidden;}
+.item-card {border: 1px solid #edeeee;padding: 25px;}
+.owl-nav button{background: transparent;border: transparent;}
+button.owl-prev,button.owl-next {position: absolute;font-size: 75px;left: -75px;line-height: 3;color: #919191}
+button.owl-next{right: -75px;left: initial}
+.owl-item{opacity: 0;}
+.owl-item.active{opacity: 1;}
+.wcs small{font-size: 16px;color:#ff9e20}
+.wcs .bub:before {top: 10em;left: -6em;}
+.wcs .bub:after{left: -3em;top: 8em;}
+.footer{background: #f8f8f8;margin-top:75px;padding-top:45px;float:left;width:100%;}
+.footer h3{font-size:17px;}
+.loc{color:#000}
+.copy_right{background: #ff9e20;padding: 10px 0;margin-top:45px;}
+.cf a,.cf div{font-size:14px;}
+  @media(max-width: 991px) {
   .header_area .navbar-right {
     margin: 20px 0;
   }
@@ -356,7 +407,7 @@
 
 .btnBorder{
     margin: auto;
-    width: fit-content;
+    width: 590px;
     border-radius: 25px;
     border: solid 2px #ffa12e;
 
@@ -365,4 +416,3 @@
 .cbContainer {
     margin-top: -20px;
 }
-      
