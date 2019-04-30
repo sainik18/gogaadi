@@ -416,3 +416,15 @@ button.owl-next{right: -75px;left: initial}
 .cbContainer {
     margin-top: -20px;
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.mt0 {
+  margin-top: 0px;
+}

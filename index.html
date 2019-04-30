@@ -47,7 +47,7 @@
     <div class="container">
     <div class="row align-items-center text-center text-md-left">
     <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
-    <h1>Quality & Best service is our responsibilty</h1>
+    <h1 class="uppercase">anything & everything that your Gaadi needs</h1>
     <p>Introducing GoGaadi’s ondemand services. Be it your two wheeler or four wheeler, we have service solution for both at your finger tip</p>
     <a class="button linkBtn" href="#">Book a Service</a>
     </div>
@@ -62,12 +62,12 @@
 <section class="section-margin generic-margin text-center pt-5">
     <div class="container">
     <div class="btnBorder">
-    <a class="button carBtn" href="">I have a car</a>
-    <a class="button bikeBtn" href="">I have a bike</a>
+    <a class="button carBtn pointer" onclick="changeTab('car')" >I have a car</a>
+    <a class="button bikeBtn pointer" onclick="changeTab('bike')" >I have a bike</a>
     </div>
     </div>
 
-    <div class="container z-depth-1 cbContainer pb-5">
+    <div class="container z-depth-1 cbContainer pb-5 carSection">
     <h3 class="pt-5">We always maintain the <span class="themefont">Quality of our Work</span></h3>
     <h6 class="grey">Our Services</h6>
 
@@ -81,7 +81,7 @@
     <h5 class="pt-3">Car Spa</h5>
     </div>
     <div class="col-md-3">
-    <img src="assets/images/car-spa.png"/>
+    <img src="assets/images/bike-accessories.png"/>
     <h5 class="pt-3">Car Accessories</h5>
     </div>
     <div class="col-md-3">
@@ -90,6 +90,30 @@
     </div>
     </div>
     </div>
+
+    <div class="container z-depth-1 cbContainer pb-5 bikeSection" style="display:none">
+        <h3 class="pt-5">We always maintain the <span class="themefont">Quality of our Work</span></h3>
+        <h6 class="grey">Our Services</h6>
+    
+        <div class="row pt-5">
+        <div class="col-md-3">
+        <img src="assets/images/bike-services.png"/>
+        <h5 class="pt-3">Bike Services</h5>
+        </div>
+        <div class="col-md-3">
+        <img src="assets/images/bike-spa.png"/>
+        <h5 class="pt-3">Bike Spa</h5>
+        </div>
+        <div class="col-md-3">
+        <img src="assets/images/bike-accessories.png"/>
+        <h5 class="pt-3">Bike Accessories</h5>
+        </div>
+        <div class="col-md-3">
+        <img src="assets/images/bike-road-side-assist.png"/>
+        <h5 class="pt-3">Roadside Assist</h5>
+        </div>
+        </div>
+        </div>
 </section>
 </div>    
 
@@ -110,21 +134,37 @@
                     <p>Car repair, bike spa, or a vehicle regular maintenance. Choose from the list of services we offer</p>
                 </div>
             </div>
-            <div class="main step2">
+            <div class="row main">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                    <img src="assets/images/line.png" />
+                </div>
+            </div>
+            <div class="step2">
                 <div class="caption">
                     <h3>Give your <span class="org">Car / Bike</span> details</h3>
                     <p>We would want to provide the best services by using the most appropriate products. Letting us know about your vehicle type will help us do that</p>
                 </div>
                 <img src="assets/images/step-2.png" alt="step-2" />
             </div>
+            <div class="row main">
+                <img class="m-auto" src="assets/images/line2.png" />
+            </div>
 
-            <div class="main step3">
+            <div class="main step3 mt0">
                 <img src="assets/images/step-3.png" alt="step-3" />
                 <div class="caption">
                     <h3>Choose a <span class="org">Service Center</span></h3>
                     <p>We offer a wide range of authorized service centers that are rated the best in the city. Select the one that you like and your wish is our command.</p>
                 </div>
             </div>
+
+            <div class="row main mt0">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10">
+                        <img src="assets/images/line3.png" />
+                    </div>
+                </div>
 
             <div class="main step4">
                 <div class="caption">
@@ -234,7 +274,7 @@
 <footer class="footer clear">
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
         <div class="org text-upper-case">
                 <strong>GoGaadi</strong>
             <div class="loc">Hitec City, Hyderabad</div>
@@ -252,7 +292,7 @@
             <a>Privacy Policy</a>
             <a>Terms & Conditions</a>
         </div>
-        <div class="col-md-2 cf">
+        <div class="col-md-3 cf">
             <h3>Get in Touch</h3>
             <div>Phone :- +91 87534 94073</div>
             <div>gogadidigital@gmail.com</div>

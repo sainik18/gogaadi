@@ -47,9 +47,16 @@ $(function() {
               }
           })
       }
-  
-  
-  
-  
     
   });
+
+  function changeTab(type){
+      if(type == 'car'){
+        $('.bikeSection').css('display','none');
+        $('.carSection').css('display','block');
+          
+      }else if (type == 'bike'){
+        $('.carSection').css('display','none');
+        $('.bikeSection').css('display','block');
+      }
+  }
