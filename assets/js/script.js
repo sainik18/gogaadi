@@ -60,3 +60,25 @@ $(function() {
         $('.bikeSection').css('display','block');
       }
   }
+
+  (function() {
+    $.scrollify({
+      section : "section",
+      sectionName : "section-name",
+      easing: "easeOutExpo",
+      scrollSpeed: 1000,
+      offset : -50,
+      setHeights: false,
+      scrollbars: false,
+      before:function() {},
+      after:function() {}
+    });
+    
+    $('li').click(function() {
+      $.scrollify.move('#' + $(this).attr('id'))
+    })
+    
+    $('li').hover(function() {
+      $(this).toggleClass('isHover');
+    })
+  })()
