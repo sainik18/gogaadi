@@ -54,16 +54,20 @@ $(function() {
       if(type == 'car'){
         $('.bikeSection').css('display','none');
         $('.carSection').css('display','block');
+        $('.bikeBtn').css('background-color','#ffffff');
+        $('.carBtn').css('background-color','#f2f2f2');
           
       }else if (type == 'bike'){
         $('.carSection').css('display','none');
         $('.bikeSection').css('display','block');
+        $('.bikeBtn').css('background-color','#f2f2f2');
+        $('.carBtn').css('background-color','#ffffff');
       }
   }
 
   (function() {
     $.scrollify({
-      section : "section",
+      section : ".scrollhere",
       sectionName : "section-name",
       easing: "easeOutExpo",
       scrollSpeed: 1000,
