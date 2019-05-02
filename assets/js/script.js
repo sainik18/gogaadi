@@ -71,7 +71,7 @@ $(function() {
       sectionName : "section-name",
       easing: "easeOutExpo",
       scrollSpeed: 1000,
-      offset : -50,
+      offset : -80,
       setHeights: false,
       scrollbars: false,
       before:function() {},
