@@ -60,6 +60,7 @@
 .caption:before {content: "1";font-size: 215px;position: absolute;top: 75px;left: 30%;z-index: -1;color: rgba(255, 157, 37, 0.1);}
 .main{width:100%;float:left;margin-top:100px}
 .main img{width:45%}
+.step2 .caption:before{content: "2"}
 .main.step2 .caption:before{content: "2"}
 .main.step3 .caption:before{content: "3"}
 .main.step4 .caption:before{content: "4"}

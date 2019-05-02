@@ -70,7 +70,7 @@ $(function() {
       section : ".scrollhere",
       sectionName : "section-name",
       easing: "easeOutExpo",
-      scrollSpeed: 1000,
+      scrollSpeed: 2000,
       offset : -80,
       setHeights: false,
       scrollbars: false,
