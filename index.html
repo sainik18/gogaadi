@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/header.scss"/>
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,700,800" rel="stylesheet">
 </head>
 <body>
 
@@ -32,7 +32,7 @@
     </ul>
 
     <div class="nav-right text-center text-lg-right py-4 py-lg-0">
-    <a class="button linkBtn" href="#">Download App</a>
+    <a class="button linkBtn" href="#" >Download App</a>
     </div>
     </div> 
     </div>
@@ -48,7 +48,7 @@
     <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
     <h1 class="uppercase">anything & everything that your Gaadi needs</h1>
     <p>Introducing GoGaadi’s ondemand services. Be it your two wheeler or four wheeler, we have service solution for both at your finger tip</p>
-    <a class="button linkBtn" href="#">Book a Service</a>
+    <a class="button linkBtn" href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Book a Service</a>
     </div>
     <div class="col-md-6 col-lg-7 col-xl-6 offset-xl-1">
     <img class="img-fluid" src="assets/images/banner-graphic.png" alt="">
@@ -66,53 +66,58 @@
     </div>
     </div>
 
-    <div class="container z-depth-1 cbContainer pb-5 carSection">
-    <h3 class="pt-5">We always maintain the <span class="themefont">Quality of our Work</span></h3>
-    <h6 class="grey">Our Services</h6>
+   
+       <div class="container z-depth-1 cbContainer pb-5 carSection">
+            <div class="d_arr">
+                <h3 class="pt-5">We always maintain the <span class="themefont">Quality of our Work</span></h3>
+                <h6 class="grey">Our Services</h6>
 
-    <div class="row pt-5">
-    <div class="col-md-3">
-    <img src="assets/images/car-services.png"/>
-    <h5 class="pt-3">Car Services</h5>
-    </div>
-    <div class="col-md-3">
-    <img src="assets/images/car-spa.png"/>
-    <h5 class="pt-3">Car Spa</h5>
-    </div>
-    <div class="col-md-3">
-    <img src="assets/images/bike-accessories.png"/>
-    <h5 class="pt-3">Car Accessories</h5>
-    </div>
-    <div class="col-md-3">
-    <img src="assets/images/road-side-assist.png"/>
-    <h5 class="pt-3">Roadside Assist</h5>
-    </div>
-    </div>
-    </div>
+            
+                <div class="row pt-5">
+                    <div class="col-md-3">
+                    <img src="assets/images/car-services.png"/>
+                    <h5 class="pt-3">Car Services</h5>
+                    </div>
+                    <div class="col-md-3">
+                    <img src="assets/images/car-spa.png"/>
+                    <h5 class="pt-3">Car Spa</h5>
+                    </div>
+                    <div class="col-md-3">
+                    <img src="assets/images/bike-accessories.png"/>
+                    <h5 class="pt-3">Car Accessories</h5>
+                    </div>
+                    <div class="col-md-3">
+                    <img src="assets/images/road-side-assist.png"/>
+                    <h5 class="pt-3">Roadside Assist</h5>
+                    </div>
+                    </div>
+                </div>
 
-    <div class="container z-depth-1 cbContainer pb-5 bikeSection" style="display:none">
-        <h3 class="pt-5">We always maintain the <span class="themefont">Quality of our Work</span></h3>
-        <h6 class="grey">Our Services</h6>
-    
-        <div class="row pt-5">
-        <div class="col-md-3">
-        <img src="assets/images/bike-services.png"/>
-        <h5 class="pt-3">Bike Services</h5>
-        </div>
-        <div class="col-md-3">
-        <img src="assets/images/bike-spa.png"/>
-        <h5 class="pt-3">Bike Spa</h5>
-        </div>
-        <div class="col-md-3">
-        <img src="assets/images/bike-accessories.png"/>
-        <h5 class="pt-3">Bike Accessories</h5>
-        </div>
-        <div class="col-md-3">
-        <img src="assets/images/bike-road-side-assist.png"/>
-        <h5 class="pt-3">Roadside Assist</h5>
-        </div>
-        </div>
-        </div>
+                <div class="container z-depth-1 cbContainer pb-5 bikeSection" style="display:none">
+                    <h3 class="pt-5">We always maintain the <span class="themefont">Quality of our Work</span></h3>
+                    <h6 class="grey">Our Services</h6>
+                
+                    <div class="row pt-5">
+                    <div class="col-md-3">
+                    <img src="assets/images/bike-services.png"/>
+                    <h5 class="pt-3">Bike Services</h5>
+                    </div>
+                    <div class="col-md-3">
+                    <img src="assets/images/bike-spa.png"/>
+                    <h5 class="pt-3">Bike Spa</h5>
+                    </div>
+                    <div class="col-md-3">
+                    <img src="assets/images/bike-accessories.png"/>
+                    <h5 class="pt-3">Bike Accessories</h5>
+                    </div>
+                    <div class="col-md-3">
+                    <img src="assets/images/bike-road-side-assist.png"/>
+                    <h5 class="pt-3">Roadside Assist</h5>
+                    </div>
+                    </div>
+                </div>
+           </div>
+        </div>   
 </section>
 </div>    
 
@@ -356,5 +361,73 @@
     }
 })
     </script>
+
+<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Request a call back from our team of experts</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                <div class="arrow left"></div>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Full Name*</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tell us your name">
+                    </div>
+                  
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Phone Number*</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please share your phone number">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please share your email address">
+                            </div>
+                        </div> 
+                    </div>
+                   
+
+                   
+                    <div class="row">
+                    <div class="col">
+                        <label class="vt">Vehicle type</label>
+                        <label class="c_box">Car
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="c_box">Bike
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label for="exampleInputEmail1">Service Looking for</label>   
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose type of service</option>                     
+                            <option>...</option>
+                       </select>                         
+                    </div>
+                </div>
+                <div class="bub"> </div>   
+                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                </form>
+
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" class="btn btn-primary linkBtn">Submit</button>
+        </div>
+              
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

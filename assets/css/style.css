@@ -94,6 +94,40 @@ button.owl-next{right: -75px;left: initial}
 .loc{color:#000}
 .copy_right{background: #ff9e20;padding: 10px 0;margin-top:45px;}
 .cf a,.cf div{font-size:14px;}
+.modal-header{background: #ff9d25;color: #fff;z-index: 3;}
+.modal-dialog .arrow.left{top:-20px;left: 5%;z-index: 1;}
+.close:not(:disabled):not(.disabled) {cursor: pointer;background: #fff;color: #ff9d25;opacity: 1;border-radius: 100%;padding: 0;width: 35px;height: 35px;margin: 0;text-align: center;}
+form label{color: #3a3b3c;font-family: 'Muli', sans-serif}
+form{margin-top:35px;}
+form .form-control{border-bottom: 2px solid #ff9d25;border-left: transparent;border-right: transparent;border-top: transparent;border-radius: 0;background: #f7f7f7;padding: 10px;color: #b3b3b3}
+/*custom check box */
+.c_box{display:inline-block;position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 18px;margin:0 15px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.c_box input {position: absolute;opacity: 0;cursor: pointer;}
+.checkmark {position: absolute;top: 0;left: 0;height: 25px;width: 25px;background-color: #eee;border-radius: 50%;}
+.checkmark:hover input ~ .checkmark {background-color: #ccc;}
+.c_box input:checked ~ .checkmark {background-color: #e8e8e8;}
+.checkmark:after {content: "";position: absolute;display: none;} 
+.c_box input:checked ~ .checkmark:after {display: block;}
+.c_box .checkmark:after {top: 9px;left: 9px;width: 8px;height: 8px;border-radius: 50%;background: #ff9d25; }
+.vt{display: block}
+select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
+.bd-example-modal-lg .modal-footer{display: block;}
+.btn-primary.linkBtn{border: 1px solid #ff9d25}
+.modal-body{padding: 1rem 3rem;}
+.form-group {margin-bottom: 2rem;}
+.modal-dialog {overflow: hidden;}
+.modal-dialog .bub{left: -45px; top: 30px;}
+.modal-footer{border-top:transparent}
+.section-margin .btnBorder,.d_arr{position: relative;}
+.section-margin .btnBorder:before {background: url(../../assets/images/triangle-graphic.png)no-repeat scroll center center / 100% auto;
+  content: '';
+  top: -65px;
+  position: absolute;
+  left: -47%;
+  padding: 50px;
+  transform: rotate(-180deg);}
+  .d_arr:after {background: url(../../assets/images/triangle-graphic.png)no-repeat scroll center center / 100% auto;
+    content: '';top: 100%;position: absolute;left: 90%;padding: 50px;margin: 35px 0 0 0;}
 @media(min-width:320px) and (max-width:767px){
   .hero-banner h1{font-size: 1.5rem;}
   .generic-margin .btnBorder{width:100%;border-radius: 0px;}
@@ -114,6 +148,11 @@ button.owl-next{right: -75px;left: initial}
   .text-right.cbfr{text-align: left !important}
   .bg_y .header_area .navbar .nav .nav-item .nav-link{padding:5px}
   .header_area .navbar .nav-right{text-align: left !important}
+  .c_box{margin: 0 5px}
+  .modal-body { padding: 1rem 1rem;}
+  .modal-body .col{flex-basis: initial}
+  .close:not(:disabled):not(.disabled){width: 25px;height: 25px;margin: -0.7rem;}
+  .modal-title{font-size: 14px}
 }
 @media(min-width:768px) and (max-width:1023px){
   .abt-gr img{width:100%;}
@@ -129,6 +168,10 @@ button.owl-next{right: -75px;left: initial}
   .bg_y .header_area .navbar{background: #fff}
   .text-right.cbfr{text-align: left !important}
   .bg_y .header_area .navbar .nav .nav-item .nav-link{padding:5px}
+  .c_box{margin: 0 5px}
+  .d_arr:after{left:90%;top:100%;padding: 40px;}
+  .main{margin-top:35px;}
+  .section-margin .btnBorder:before{top: -20px;left: -65px;padding: 25px;width: 35px;}
 }
   @media(max-width: 991px) {
   .header_area .navbar-right {
