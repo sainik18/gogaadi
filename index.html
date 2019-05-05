@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="assets/css/header.scss"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </head>
 <body>
 
@@ -19,9 +20,7 @@
     <div class="container box_1620">
     <a class="navbar-brand logo_h" href="index.html"><img style="height: 60px;" src="assets/images/logo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
+        <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
@@ -184,8 +183,8 @@
         <div class="container clear">
             <div class="space">
                 <div class="row">
-                    <div class="col-md-9 col-lg-9 col-xl-8 hgh"><p>Not sure about what service you are looking for? Let us help you!</p></div>
-                    <div class="col-md-3 col-lg-3 col-xl-4 text-right cbfr"><a href="javascript:void(0)" class="linkBtn">Request Call Back from Expert</a></div>
+                    <div class="col-md-8 col-lg-9 col-xl-8 hgh"><p>Not sure about what service you are looking for? Let us help you!</p></div>
+                    <div class="col-md-4 col-lg-3 col-xl-4 text-right cbfr"><a href="javascript:void(0)" class="linkBtn">Request Call Back from Expert</a></div>
                 </div>
             </div>
         </div>
@@ -209,12 +208,12 @@
 <section>
     <div class="container clear scrollhere">
     <div class="row">
-        <div class="col-md-5 pt-150">
+        <div class="col-md-5 col-sm-5 pt-150">
             <h3 class="ae"><span class="org">Anything & Everything
             about your Gaadi</span></h3>
             <p>From Repairs, to Spa Services & Accessory shopping for your Gaadi - you name it & we have it. We offer you a complete range of solutions for your Gaadi with quality being our top priority - ALWAYS! </p>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 col-sm-7 abt-gr">
           <img src="assets/images/about-us-graphic.png" alt="about-us-graphic" />
         </div>
     </div>
@@ -338,11 +337,15 @@
     responsive:{
         0:{
             items:1,
-            nav:true
+            nav:true,
+            margin:0,
+            dots:false
         },
         600:{
-            items:3,
-            nav:false
+            items:1,
+            nav:true,
+            margin:0,
+            dots: false
         },
         1000:{
             items:2,

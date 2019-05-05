@@ -94,6 +94,42 @@ button.owl-next{right: -75px;left: initial}
 .loc{color:#000}
 .copy_right{background: #ff9e20;padding: 10px 0;margin-top:45px;}
 .cf a,.cf div{font-size:14px;}
+@media(min-width:320px) and (max-width:767px){
+  .hero-banner h1{font-size: 1.5rem;}
+  .generic-margin .btnBorder{width:100%;border-radius: 0px;}
+  .btnBorder .carBtn,.btnBorder .bikeBtn{width: auto;border-radius: 0px;margin: 0}
+  .bub:before{opacity: 0.2;}.bub:after{opacity:0.25}
+  .pt-60 {padding-top: 15px;}
+  .main{margin-top: 25px;}
+  .main img,.caption p,.step2 img,.step3 img,.step4 img,.abt-gr img{width:100%;}
+  .caption{padding: 0;}
+  .caption:before{font-size: 110px;top:5px;}
+  .hgh p{font-size: 1.2rem;font-family: 'Muli', sans-serif}
+  .pt-150 {padding-top: 10px;}
+  .ae{font-size: 24px}
+  .items-container{padding: 0}
+  .carousel {padding-top: 15px;}
+  .footer{margin-top: 10px;padding-top: 10px;}
+  .bg_y .header_area .navbar{background: #fff}
+  .text-right.cbfr{text-align: left !important}
+  .bg_y .header_area .navbar .nav .nav-item .nav-link{padding:5px}
+  .header_area .navbar .nav-right{text-align: left !important}
+}
+@media(min-width:768px) and (max-width:1023px){
+  .abt-gr img{width:100%;}
+  .pt-150 {padding-top: 25px;}
+  .ae{font-size:14px;}
+  .cbfr .linkBtn{padding: 8px 15px;font-size: 12px}
+  .hgh{height: auto;}
+  .hgh p {font-size: 0.9rem;}
+  .caption{padding:35px 15px 0;width:50%}
+  .caption:before{font-size: 135px;top:0}
+  .step2 img{width:45%}
+  .cbContainer .col-md-3 img{width:80%}
+  .bg_y .header_area .navbar{background: #fff}
+  .text-right.cbfr{text-align: left !important}
+  .bg_y .header_area .navbar .nav .nav-item .nav-link{padding:5px}
+}
   @media(max-width: 991px) {
   .header_area .navbar-right {
     margin: 20px 0;
