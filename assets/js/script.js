@@ -72,7 +72,7 @@ $(function() {
       section : ".scrollhere",
       sectionName : "section-name",
       easing: "easeOutExpo",
-      scrollSpeed: 2000,
+      scrollSpeed: 1000,
       offset : -80,
       setHeights: false,
       scrollbars: false,
@@ -88,3 +88,27 @@ $(function() {
       $(this).toggleClass('isHover');
     })
   })()
+
+
+  $(document).ready(function () {
+    $('a.ourservices').click(function() {
+    $('html, body').animate({
+      scrollTop: $("section.ourservices").offset().top- 80
+    }, 1000)
+  }), 
+    $('a.howwework').click(function (){
+      $('html, body').animate({
+        scrollTop: $("section.howwework").offset().top -80
+      }, 1000)
+    }),
+    $('a.aboutus').click(function (){
+      $('html, body').animate({
+        scrollTop: $("div.aboutus").offset().top -80
+      }, 1000)
+    }),
+    $('a.testimonials').click(function (){
+      $('html, body').animate({
+        scrollTop: $("section.testimonials").offset().top -80
+      }, 1000)
+    })
+  });

@@ -508,3 +508,11 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
 .mt0 {
   margin-top: 0px;
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.modal-content {
+  border: none;
+}
