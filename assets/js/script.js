@@ -173,4 +173,25 @@ $(function() {
 
   }); // left menu link3 click() scroll END
 
+
+  // for popup checkbox
+  $( ".inpradio" ).on( "click", function() {
+    var type = $( ".inpradio:checked" ).val();
+    $('#inputState').html('');
+    if(type == 'car'){
+    $('#inputState').append('<option selected>Choose type of service</option>'+
+                            '<option>Car Service</option>'+
+                            '<option>Car Spa</option>'+
+                            '<option>Car Accessories</option>'+
+                            '<option>Roadside Assist</option>');
+    }else if(type == 'bike'){
+      $('#inputState').append('<option selected>Choose type of service</option>'+
+                            '<option>Bike Services</option>'+
+                            '<option>Bike Spa</option>'+
+                            '<option>Bike Accessories</option>'+
+                            '<option>Roadside Assist</option>');
+
+    }
+  });
+
 });
