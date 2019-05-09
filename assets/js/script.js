@@ -68,17 +68,17 @@ $(function() {
   }
 
   (function() {
-    $.scrollify({
-      section : ".scrollhere",
-      sectionName : "section-name",
-      easing: "easeOutExpo",
-      scrollSpeed: 1000,
-      offset : -80,
-      setHeights: false,
-      scrollbars: false,
-      before:function() {},
-      after:function() {}
-    });
+    // $.scrollify({
+    //   section : ".scrollhere",
+    //   sectionName : "section-name",
+    //   easing: "easeOutExpo",
+    //   scrollSpeed: 1000,
+    //   offset : -80,
+    //   setHeights: false,
+    //   scrollbars: false,
+    //   before:function() {},
+    //   after:function() {}
+    // });
     
     $('li').click(function() {
       $.scrollify.move('#' + $(this).attr('id'))

@@ -25,10 +25,10 @@
 
     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
     <ul class="nav navbar-nav menu_nav justify-content-end">
-    <li class="nav-item pointer active"><a class="nav-link ourservices">Our Services</a></li> 
-    <li class="nav-item pointer"><a class="nav-link howwework">How We Work</a></li> 
-    <li class="nav-item pointer"><a class="nav-link aboutus">About Us</a>
-    <li class="nav-item pointer"><a class="nav-link testimonials">Testimonials</a></li>
+    <li class="nav-item pointer active"><a href="javascript:void(0)" class="nav-link ourservices">Our Services</a></li> 
+    <li class="nav-item pointer"><a href="javascript:void(0)" class="nav-link howwework">How We Work</a></li> 
+    <li class="nav-item pointer"><a href="javascript:void(0)" class="nav-link aboutus">About Us</a>
+    <li class="nav-item pointer"><a href="javascript:void(0)" class="nav-link testimonials">Testimonials</a></li>
     </ul>
 
     <div class="nav-right text-center text-lg-right py-4 py-lg-0">
@@ -437,4 +437,11 @@
     <span><a href="">&uarr;</a></span>
   </div>
 </body>
+<script>
+    var e = $('.nav-item');
+    $(e).on('click',function(){
+        $('.nav-item').removeClass('active');
+        $(this).addClass('active');
+    })
+</script>
 </html>

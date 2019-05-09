@@ -53,12 +53,12 @@
 .arrow:before {transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);}
 .arrow:after {transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);}
 .circle{position: absolute;width: 45px;height: 45px;background: #fff;border-radius: 100%;border: 10px solid #f7a7a8;top: -90px;left: 59%;}
-.pt-60{padding-top:60px;}
+.pt-60{padding-top:0;}
 .main img{float:left;}
 .caption{float: left;padding: 215px 75px 0;position:relative}
 .caption p{color:#676767;line-height: 30px;width:415px}
 .caption:before {content: "1";font-size: 215px;position: absolute;top: 75px;left: 30%;z-index: -1;color: rgba(255, 157, 37, 0.1);}
-.main{width:100%;float:left;margin-top:100px}
+.main{width:100%;float:left;margin-top:45px}
 .main img{width:45%}
 .step2 .caption:before{content: "2"}
 .main.step2 .caption:before{content: "2"}
@@ -128,6 +128,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
   transform: rotate(-180deg);}
   .d_arr:after {background: url(../../assets/images/triangle-graphic.png)no-repeat scroll center center / 100% auto;
     content: '';top: 100%;position: absolute;left: 90%;padding: 50px;margin: 35px 0 0 0;}
+    .cbContainer{background: #fff}
 @media(min-width:320px) and (max-width:767px){
   .hero-banner h1{font-size: 1.5rem;}
   .generic-margin .btnBorder{width:100%;border-radius: 0px;}
@@ -138,7 +139,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
   .main img,.caption p,.step2 img,.step3 img,.step4 img,.abt-gr img{width:100%;}
   .caption{padding: 0;}
   .caption:before{font-size: 110px;top:5px;}
-  .hgh p{font-size: 1.2rem;font-family: 'Muli', sans-serif}
+  .hgh p{font-size: 1.1rem;font-family: 'Muli', sans-serif}
   .pt-150 {padding-top: 10px;}
   .ae{font-size: 24px}
   .items-container{padding: 0}
@@ -153,6 +154,9 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
   .modal-body .col{flex-basis: initial}
   .close:not(:disabled):not(.disabled){width: 25px;height: 25px;margin: -0.7rem;}
   .modal-title{font-size: 14px}
+  .d_arr:after{left:75%;padding:35px}
+  .mb100 {margin-bottom: 10px !important;}
+  .wcs {padding-top: 115px;}
 }
 @media(min-width:768px) and (max-width:1023px){
   .abt-gr img{width:100%;}
