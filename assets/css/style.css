@@ -153,7 +153,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
   .main{margin-top: 25px;}
   .main img,.caption p,.step2 img,.step3 img,.step4 img,.abt-gr img{width:100%;}
   .caption{padding: 0;}
-  .caption:before{font-size: 120px;top:5px;}
+  .caption:before{font-size: 125px;top:-15px;}
   .hgh p{font-size: 1.1rem;font-family: 'Muli', sans-serif}
   .pt-150 {padding-top: 10px;}
   .ae{font-size: 24px}
