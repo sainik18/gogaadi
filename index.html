@@ -25,10 +25,10 @@
 
     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
     <ul class="nav navbar-nav menu_nav justify-content-end">
-    <li class="nav-item pointer active"><a href="javascript:void(0)" class="nav-link ourservices">Our Services</a></li> 
-    <li class="nav-item pointer"><a href="javascript:void(0)" class="nav-link howwework">How We Work</a></li> 
-    <li class="nav-item pointer"><a href="javascript:void(0)" class="nav-link aboutus">About Us</a>
-    <li class="nav-item pointer"><a href="javascript:void(0)" class="nav-link testimonials">Testimonials</a></li>
+    <li class="nav-item pointer active"><a href="#ourservices" class="nav-link ourservices">Our Services</a></li> 
+    <li class="nav-item pointer"><a href="#howwework" class="nav-link howwework">How We Work</a></li> 
+    <li class="nav-item pointer"><a href="#aboutus" class="nav-link aboutus">About Us</a>
+    <li class="nav-item pointer"><a href="#testimonials" class="nav-link testimonials">Testimonials</a></li>
     </ul>
 
     <div class="nav-right text-center text-lg-right py-4 py-lg-0">
@@ -58,7 +58,7 @@
 </section>
 <!--================Hero Banner Area End =================-->
 
-<section class="section-margin generic-margin text-center pt-5 scrollhere ourservices">
+<section class="section-margin generic-margin text-center pt-5 scrollhere ourservices" id="ourservices">
     <div class="container">
     <div class="btnBorder">
     <a class="button carBtn pointer" onclick="changeTab('car')" >I have a car</a>
@@ -123,7 +123,7 @@
 </div>    
 
 <!--anything-->
-<section class="anything scrollhere howwework">
+<section class="anything scrollhere howwework" id="howwework">
     <div class="container clear">
         <div class="bub">
             <div class="arrow left"></div>
@@ -184,7 +184,7 @@
 </section>
 
 <!--Request call back-->
-<section class="main">
+<section class="main" id="aboutus">
     <div class="full_width rcb scrollhere mb100">
         <div class="container clear">
             <div class="space">
@@ -226,7 +226,7 @@
 </section>
 
 <!--what our customers say-->
-<section class="wcs scrollhere testimonials">
+<section class="wcs scrollhere testimonials" id="testimonials">
     <div class="container posrel">
         <div class="arrow left"></div>
         <div class="circle"></div>
@@ -443,5 +443,32 @@
         $('.nav-item').removeClass('active');
         $(this).addClass('active');
     })
+    var topMenu = $(".menu_nav"),
+        menuItems = topMenu.find("a"),
+        scrollItems = menuItems.map(function(){
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+        });
+    menuItems.click(function(e){
+      var href = $(this).attr("href"),
+          offsetTop = href === "#" ? 0 : $(href).offset().top;
+      $('html, body').stop().animate({ 
+          scrollTop: offsetTop
+      }, 1500,function(){
+          window.location.hash = href;
+      });
+      e.preventDefault();
+    });
+
+ $(window).scroll(function(){
+   var fromTop = $(this).scrollTop();
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top - 60 <= fromTop)
+       return this;
+   });
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   menuItems.parent().removeClass("active").end().filter("[href='#"+id+"']").parent().addClass("active");
+});
 </script>
 </html>

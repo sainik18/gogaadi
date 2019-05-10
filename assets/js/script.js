@@ -91,26 +91,7 @@ $(function() {
 
 
   $(document).ready(function () {
-    $('a.ourservices').click(function() {
-    $('html, body').animate({
-      scrollTop: $("section.ourservices").offset().top- 80
-    }, 1000)
-  }), 
-    $('a.howwework').click(function (){
-      $('html, body').animate({
-        scrollTop: $("section.howwework").offset().top -80
-      }, 1000)
-    }),
-    $('a.aboutus').click(function (){
-      $('html, body').animate({
-        scrollTop: $("div.aboutus").offset().top -80
-      }, 1000)
-    }),
-    $('a.testimonials').click(function (){
-      $('html, body').animate({
-        scrollTop: $("section.testimonials").offset().top -80
-      }, 1000)
-    })
+    
 
 
 
@@ -145,33 +126,33 @@ $(function() {
     LEFT MENU SMOOTH SCROLL ANIMATION
    *************************************/
   // declare variable
-  var h1 = $("#h1").position();
-  var h2 = $("#h2").position();
-  var h3 = $("#h3").position();
+  // var h1 = $("#h1").position();
+  // var h2 = $("#h2").position();
+  // var h3 = $("#h3").position();
 
-  $('.link1').click(function() {
-    $('html, body').animate({
-      scrollTop: h1.top
-    }, 500);
-    return false;
+  // $('.link1').click(function() {
+  //   $('html, body').animate({
+  //     scrollTop: h1.top
+  //   }, 500);
+  //   return false;
 
-  }); // left menu link2 click() scroll END
+  // }); // left menu link2 click() scroll END
 
-  $('.link2').click(function() {
-    $('html, body').animate({
-      scrollTop: h2.top
-    }, 500);
-    return false;
+  // $('.link2').click(function() {
+  //   $('html, body').animate({
+  //     scrollTop: h2.top
+  //   }, 500);
+  //   return false;
 
-  }); // left menu link2 click() scroll END
+  // }); // left menu link2 click() scroll END
 
-  $('.link3').click(function() {
-    $('html, body').animate({
-      scrollTop: h3.top
-    }, 500);
-    return false;
+  // $('.link3').click(function() {
+  //   $('html, body').animate({
+  //     scrollTop: h3.top
+  //   }, 500);
+  //   return false;
 
-  }); // left menu link3 click() scroll END
+  // }); // left menu link3 click() scroll END
 
 
   // for popup checkbox

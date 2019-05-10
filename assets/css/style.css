@@ -99,7 +99,8 @@ button.owl-next{right: -75px;left: initial}
 .close:not(:disabled):not(.disabled) {cursor: pointer;background: #fff;color: #ff9d25;opacity: 1;border-radius: 100%;padding: 0;width: 35px;height: 35px;margin: 0;text-align: center;}
 form label{color: #3a3b3c;font-family: 'Muli', sans-serif}
 form{margin-top:35px;}
-form .form-control{border-bottom: 2px solid #ff9d25;border-left: transparent;border-right: transparent;border-top: transparent;border-radius: 0;background: #f7f7f7;padding: 10px;color: #b3b3b3}
+form .form-control{/*border-bottom: 2px solid #ff9d25;border-left: transparent;border-right: transparent;border-top: transparent;border-radius: 0;*/color: #b3b3b3;
+  border: 2px solid #a3c8ff;padding:10px}
 /*custom check box */
 .c_box{display:inline-block;position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 18px;margin:0 15px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 .c_box input {position: absolute;opacity: 0;cursor: pointer;}
