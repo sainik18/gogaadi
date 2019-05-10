@@ -91,7 +91,26 @@ $(function() {
 
 
   $(document).ready(function () {
-    
+  //   $('a.ourservices').click(function() {
+  //   $('html, body').animate({
+  //     scrollTop: $("section.ourservices").offset().top- 80
+  //   }, 1500)
+  // }), 
+  //   $('a.howwework').click(function (){
+  //     $('html, body').animate({
+  //       scrollTop: $("section.howwework").offset().top -80
+  //     }, 1500)
+  //   }),
+  //   $('a.aboutus').click(function (){
+  //     $('html, body').animate({
+  //       scrollTop: $("div.aboutus").offset().top -80
+  //     }, 1500)
+  //   }),
+  //   $('a.testimonials').click(function (){
+  //     $('html, body').animate({
+  //       scrollTop: $("section.testimonials").offset().top -80
+  //     }, 1500)
+  //   })
 
 
 
