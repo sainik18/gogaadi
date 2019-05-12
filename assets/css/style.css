@@ -72,7 +72,7 @@
   color: #ffffff;}
 .cbfr{line-height: 2;}
 .space{padding-top:35px;padding-bottom:35px;width:100%;}
-.ae{ font-family: Muli;font-size: 42px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1.3;letter-spacing: normal;text-align: left;color: #ff9d25;}
+.ae{ font-family: Muli;font-size: 40px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1.3;letter-spacing: normal;text-align: left;color: #ff9d25;}
 .pt-150{padding-top:150px;}
 .wcs{padding-top:150px;}
 .posrel{position:relative;}
@@ -101,7 +101,7 @@ button.owl-next{right: -75px;left: initial}
 form label{color: #3a3b3c;font-family: 'Muli', sans-serif}
 form{margin-top:35px;}
 form .form-control{/*border-bottom: 2px solid #ff9d25;border-left: transparent;border-right: transparent;border-top: transparent;border-radius: 0;*/color: #b3b3b3;
-  border: 2px solid #ff9d25;padding:10px}
+  border-bottom: 2px solid #ff9d25;padding:10px}
 /*custom check box */
 .c_box{display:inline-block;position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 18px;margin:0 15px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 .c_box input {position: absolute;opacity: 0;cursor: pointer;}
@@ -156,7 +156,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
   .main{margin-top: 25px;}
   .main img,.caption p,.step2 img,.step3 img,.step4 img,.abt-gr img{width:100%;}
   .caption{padding: 0;}
-  .caption:before{font-size: 125px;top:-15px;}
+  .caption:before{font-size: 150px;top:-40px;}
   .hgh p{font-size: 1.1rem;font-family: 'Muli', sans-serif}
   .pt-150 {padding-top: 10px;}
   .ae{font-size: 24px}
@@ -244,7 +244,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
 }
 
 .header_area .navbar .nav-right {
-  min-width: 260px;
+  min-width: 200px;
 }
 
 .header_area .navbar .nav .nav-item {
@@ -391,7 +391,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
 }
 
 .header_area.navbar_fixed .main_menu .navbar .nav .nav-item:hover .nav-link, .header_area.navbar_fixed .main_menu .navbar .nav .nav-item.active .nav-link {
-  color: #fff;
+  color: #4c70b7;
 }
 
 @media (min-width: 992px) {
@@ -658,4 +658,12 @@ a.btn-social,
 
 .white {
   background: white !important;
+}
+
+.popinputText {
+background-color: #f7f7f7;
+}
+
+a.linkBtn:hover {
+  color: #fff;
 }
