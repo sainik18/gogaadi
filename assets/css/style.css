@@ -101,7 +101,7 @@ button.owl-next{right: -75px;left: initial}
 form label{color: #3a3b3c;font-family: 'Muli', sans-serif}
 form{margin-top:35px;}
 form .form-control{/*border-bottom: 2px solid #ff9d25;border-left: transparent;border-right: transparent;border-top: transparent;border-radius: 0;*/color: #b3b3b3;
-  border: 2px solid #a3c8ff;padding:10px}
+  border: 2px solid #ff9d25;padding:10px}
 /*custom check box */
 .c_box{display:inline-block;position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 18px;margin:0 15px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
 .c_box input {position: absolute;opacity: 0;cursor: pointer;}
@@ -132,6 +132,9 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
     content: '';top: 100%;position: absolute;left: 90%;padding: 50px;margin: 35px 0 0 0;}
     .cbContainer{background: #fff}
 @media(min-width:320px) and (max-width:767px){
+  .main_menu .navbar .nav .nav-item.active .nav-link {
+    color: blue !important;
+}
   .carBtn{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -652,3 +655,7 @@ a.btn-social,
     background-color: #83c3f3;
 }
 /* social icons end */
+
+.white {
+  background: white !important;
+}

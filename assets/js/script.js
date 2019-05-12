@@ -195,3 +195,12 @@ $(function() {
   });
 
 });
+
+$(function() {
+  var hamburger = document.getElementById('hamburger');
+  
+  $('.navbar-toggler').click(function() {
+    console.log("called")
+     $('.navbar').toggleClass('white');
+  })
+})
