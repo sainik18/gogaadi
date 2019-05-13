@@ -391,7 +391,7 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
 }
 
 .header_area.navbar_fixed .main_menu .navbar .nav .nav-item:hover .nav-link, .header_area.navbar_fixed .main_menu .navbar .nav .nav-item.active .nav-link {
-  color: #4c70b7;
+  color: #6d3ad7;
 }
 
 @media (min-width: 992px) {
@@ -666,4 +666,8 @@ background-color: #f7f7f7;
 
 a.linkBtn:hover {
   color: #fff;
+}
+
+.cf a {
+  color: #212529;
 }
