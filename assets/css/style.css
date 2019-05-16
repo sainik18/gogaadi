@@ -131,15 +131,22 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
   .d_arr:after {background: url(../../assets/images/triangle-graphic.png)no-repeat scroll center center / 100% auto;
     content: '';top: 100%;position: absolute;left: 90%;padding: 50px;margin: 35px 0 0 0;}
     .cbContainer{background: #fff}
+
+    .secimg{
+      width: 70%;
+    }
 @media(min-width:320px) and (max-width:767px){
+  .mb20{
+    margin-bottom: 20px;
+  }
   button.owl-prev {
     left: -10px;
   }
   button.owl-next {
     right: -10px;
   }
-  .width60p{
-    width: 60%;
+  .secimg{
+    width: 55%;
   }
   .nav-item {
     margin: auto;
