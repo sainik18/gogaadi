@@ -132,6 +132,9 @@ select.form-control:not([size]):not([multiple]) {height: calc(2.25rem + 5px);}
     content: '';top: 100%;position: absolute;left: 90%;padding: 50px;margin: 35px 0 0 0;}
     .cbContainer{background: #fff}
 @media(min-width:320px) and (max-width:767px){
+  .width50p{
+    width: 50%;
+  }
   .nav-item {
     margin: auto;
   }
